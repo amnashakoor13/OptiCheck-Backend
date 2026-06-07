@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: OptiCheck API
+  version: '1.0.0'
+  description: REST API for OptiCheck vision testing
+servers:
+  - url: http://localhost:4000/api/v1
+paths:
+  /auth/signup:
+    post:
+      summary: Create user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username: { type: string }
+                email: { type: string }
+                password: { type: string }
+      responses:
+        '201': { description: Created }
+  /auth/login:
+    post:
+      summary: Login
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                usernameOrEmail: { type: string }
+                password: { type: string }
+      responses:
+        '200': { description: OK }
+  /tests:
+    get:
+      summary: List user tests
+      responses:
+        '200': { description: OK }
+    post:
+      summary: Create test
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '201': { description: Created }
+  /ai/prescription:
+    post:
+      summary: Generate AI prescription
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        '200': { description: OK }
