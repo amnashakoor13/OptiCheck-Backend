@@ -113,5 +113,5 @@ npm test
 ```
 
 ## Author
-Amna Shakoor
+Amna Shakoor;
 Developed for the EyeCheck Vision Testing System.
