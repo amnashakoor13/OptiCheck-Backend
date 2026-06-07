@@ -1,8 +1,16 @@
 # 👁️ EyeCheck API
 
 A REST API built with Node.js, Express.js, and MongoDB for eye vision tests, user authentication, dashboard management, and AI-based prescription recommendations.
+## Tech Stack
 
-# 🚀 Installation & Setup Guide
+- JavaScript
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+  
+#  Installation & Setup Guide
 
 Follow the steps below to run this project on your local machine.
 
